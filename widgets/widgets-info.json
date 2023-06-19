@@ -7380,6 +7380,41 @@
     "group": 7
   },
   {
+    "name": "d3-import-data",
+    "manifest": {
+      "name": "d3-import-data",
+      "label": "d3-import-data",
+      "type": "widget",
+      "version": "1.12.0",
+      "exbVersion": "1.12.0",
+      "author": "Esri R&D Center Beijing",
+      "description": "This widget demonstrates how to use D3.js.",
+      "copyright": "",
+      "license": "http://www.apache.org/licenses/LICENSE-2.0",
+      "properties": {
+        "hasSettingPage": false,
+        "hasConfig": false
+      },
+      "translatedLocales": [
+        "en"
+      ],
+      "defaultSize": {
+        "width": 800,
+        "height": 500
+      }
+    },
+    "i18nLabel": {
+      "en": "d3-import-data"
+    },
+    "i18nDescription": {
+      "en": null
+    },
+    "uri": "widgets/d3-import-data/",
+    "icon": "widgets/d3-import-data/icon.svg",
+    "order": 700,
+    "group": 7
+  },
+  {
     "name": "demo",
     "manifest": {
       "name": "demo",
