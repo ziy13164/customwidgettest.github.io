@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkexb_client=self.webpackChunkexb_client||[]).push([[8369],{8369:e=>{e.exports=JSON.parse('{"title":"test","time":"2023-6-19"}')}}]);

@@ -1,0 +1,22 @@
+{
+  "name": "show-json-info",
+  "label": "show-json-info",
+  "type": "widget",
+  "version": "1.12.0",
+  "exbVersion": "1.12.0",
+  "author": "Esri R&D Center Beijing",
+  "description": "This widget demonstrates how to use D3.js.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasSettingPage": false,
+    "hasConfig": false
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 300,
+    "height": 200
+  }
+}

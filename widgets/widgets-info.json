@@ -7950,6 +7950,41 @@
     "group": 7
   },
   {
+    "name": "show-json-info",
+    "manifest": {
+      "name": "show-json-info",
+      "label": "show-json-info",
+      "type": "widget",
+      "version": "1.12.0",
+      "exbVersion": "1.12.0",
+      "author": "Esri R&D Center Beijing",
+      "description": "This widget demonstrates how to use D3.js.",
+      "copyright": "",
+      "license": "http://www.apache.org/licenses/LICENSE-2.0",
+      "properties": {
+        "hasSettingPage": false,
+        "hasConfig": false
+      },
+      "translatedLocales": [
+        "en"
+      ],
+      "defaultSize": {
+        "width": 300,
+        "height": 200
+      }
+    },
+    "i18nLabel": {
+      "en": "show-json-info"
+    },
+    "i18nDescription": {
+      "en": null
+    },
+    "uri": "widgets/show-json-info/",
+    "icon": "widgets/show-json-info/icon.svg",
+    "order": 700,
+    "group": 7
+  },
+  {
     "name": "show-record-id",
     "manifest": {
       "name": "show-record-id",
