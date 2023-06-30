@@ -75,20 +75,20 @@
           "name": "panTo",
           "label": "Pan to",
           "uri": "data-actions/pan-to",
-          "icon": "runtime/assets/icons/basemap.svg"
+          "icon": "runtime/assets/icons/pan-to.svg"
         },
         {
           "name": "showOnMap",
           "label": "Show on map",
           "uri": "data-actions/show-on-map",
           "settingUri": "data-actions/show-on-map-setting",
-          "icon": "runtime/assets/icons/ds-map-view.svg"
+          "icon": "runtime/assets/icons/show-on-map.svg"
         },
         {
           "name": "addToMap",
           "label": "Add to map",
           "uri": "data-actions/add-to-map",
-          "icon": "runtime/assets/icons/ds-map-view.svg"
+          "icon": "runtime/assets/icons/add-to-map.svg"
         }
       ],
       "layouts": [
@@ -243,8 +243,8 @@
       "copyright": "",
       "license": "http://www.apache.org/licenses/LICENSE-2.0",
       "defaultSize": {
-        "width": 516,
-        "height": 210
+        "width": 320,
+        "height": 400
       },
       "properties": {
         "coverLayoutBackground": true
@@ -294,10 +294,88 @@
       ]
     },
     "i18nLabel": {
-      "en": "Basemap Gallery"
+      "en": "Basemap Gallery",
+      "ar": "معرض خرائط الأساس",
+      "bg": "Галерия с базови карти",
+      "bs": "Kartografskih podloga",
+      "ca": "Galeria de mapes de base",
+      "cs": "Galerie podkladových map",
+      "da": "Galleri over baggrundskort",
+      "de": "Grundkartengalerie",
+      "el": "Συλλογή υποβάθρων",
+      "es": "Galería de mapas base",
+      "et": "Aluskaartide galerii",
+      "fi": "Taustakarttagalleria",
+      "fr": "Bibliothèque de fonds de carte",
+      "he": "גלריית מפות בסיס",
+      "hr": "Kartografskih podloga",
+      "hu": "Alaptérkép-galéria",
+      "id": "Galeri Peta Dasar",
+      "it": "Galleria di mappe di base",
+      "ja": "ベースマップ ギャラリー",
+      "ko": "베이스맵 갤러리",
+      "lt": "Pagrindo žemėlapių galerija",
+      "lv": "Pamatkaršu galerija",
+      "nb": "Bakgrunnskartgalleri",
+      "nl": "Basiskaartgalerij",
+      "pl": "Galeria map bazowych",
+      "pt-br": "Galeria de Mapa Base",
+      "pt-pt": "Galeria de Mapas Base",
+      "ro": "Galerie de hărţi fundal",
+      "ru": "Галерея базовых карт",
+      "sk": "Galéria podkladových máp",
+      "sl": "Galerija temeljnih kart",
+      "sr": "Galerija pozadinskih mapa",
+      "sv": "Galleri för baskarta",
+      "th": "แกลเลอรี่แผนที่ฐาน",
+      "tr": "Altlık Harita Galerisi",
+      "zh-cn": "底图库",
+      "uk": "Галерея базових карт",
+      "vi": "Bộ sưu tập bản đồ nền",
+      "zh-hk": "底圖庫",
+      "zh-tw": "底圖庫"
     },
     "i18nDescription": {
-      "en": null
+      "en": null,
+      "ar": null,
+      "bg": null,
+      "bs": null,
+      "ca": null,
+      "cs": null,
+      "da": null,
+      "de": null,
+      "el": null,
+      "es": null,
+      "et": null,
+      "fi": null,
+      "fr": null,
+      "he": null,
+      "hr": null,
+      "hu": null,
+      "id": null,
+      "it": null,
+      "ja": null,
+      "ko": null,
+      "lt": null,
+      "lv": null,
+      "nb": null,
+      "nl": null,
+      "pl": null,
+      "pt-br": null,
+      "pt-pt": null,
+      "ro": null,
+      "ru": null,
+      "sk": null,
+      "sl": null,
+      "sr": null,
+      "sv": null,
+      "th": null,
+      "tr": null,
+      "zh-cn": null,
+      "uk": null,
+      "vi": null,
+      "zh-hk": null,
+      "zh-tw": null
     },
     "uri": "widgets/arcgis/basemap-gallery/",
     "icon": "widgets/arcgis/basemap-gallery/icon.svg",
@@ -629,8 +707,14 @@
         "height": 400
       },
       "properties": {
+        "canConsumeDataAction": true,
         "coverLayoutBackground": true
       },
+      "excludeDataActions": [
+        "setFilter",
+        "arcgis-map.*",
+        "exportSelected"
+      ],
       "translatedLocales": [
         "en",
         "ar",
@@ -779,6 +863,9 @@
         "width": 350,
         "height": 400
       },
+      "properties": {
+        "coverLayoutBackground": true
+      },
       "dependency": "jimu-arcgis",
       "translatedLocales": [
         "en",
@@ -821,14 +908,91 @@
         "vi",
         "zh-hk",
         "zh-tw"
-      ],
-      "properties": {}
+      ]
     },
     "i18nLabel": {
-      "en": "Swipe"
+      "en": "Swipe",
+      "ar": "سحب",
+      "bg": "Плъзнете",
+      "bs": "Klizač",
+      "ca": "Comparativa",
+      "cs": "Překrývání",
+      "da": "Swipe",
+      "de": "Vergleichen",
+      "el": "Swipe",
+      "es": "Swipe",
+      "et": "Rullimise tööriist",
+      "fi": "Pyyhkäise",
+      "fr": "Balayer",
+      "he": "החלק",
+      "hr": "Klizač",
+      "hu": "Csúszka",
+      "id": "Geser",
+      "it": "Scorri",
+      "ja": "スワイプ",
+      "ko": "스와이프",
+      "lt": "Slankiklis",
+      "lv": "Pārvilkšana",
+      "nb": "Sveiping",
+      "nl": "Swipe",
+      "pl": "Zwijanie",
+      "pt-br": "Oscilar",
+      "pt-pt": "Trocar",
+      "ro": "Preluare",
+      "ru": "Шторка",
+      "sk": "Potiahnuť",
+      "sl": "Podrsni",
+      "sr": "Brzo prevlačenje",
+      "sv": "Svep",
+      "th": "ปัดขึ้น",
+      "tr": "Kaydır",
+      "zh-cn": "卷帘",
+      "uk": "Шторка",
+      "vi": "Thanh Trượt",
+      "zh-hk": "滑動",
+      "zh-tw": "滑動"
     },
     "i18nDescription": {
-      "en": null
+      "en": null,
+      "ar": null,
+      "bg": null,
+      "bs": null,
+      "ca": null,
+      "cs": null,
+      "da": null,
+      "de": null,
+      "el": null,
+      "es": null,
+      "et": null,
+      "fi": null,
+      "fr": null,
+      "he": null,
+      "hr": null,
+      "hu": null,
+      "id": null,
+      "it": null,
+      "ja": null,
+      "ko": null,
+      "lt": null,
+      "lv": null,
+      "nb": null,
+      "nl": null,
+      "pl": null,
+      "pt-br": null,
+      "pt-pt": null,
+      "ro": null,
+      "ru": null,
+      "sk": null,
+      "sl": null,
+      "sr": null,
+      "sv": null,
+      "th": null,
+      "tr": null,
+      "zh-cn": null,
+      "uk": null,
+      "vi": null,
+      "zh-hk": null,
+      "zh-tw": null
     },
     "uri": "widgets/arcgis/swipe/",
     "icon": "widgets/arcgis/swipe/icon.svg",
@@ -1312,7 +1476,7 @@
       "messageActions": [],
       "defaultSize": {
         "width": 440,
-        "height": 444,
+        "height": 446,
         "autoWidth": true,
         "autoHeight": true
       },
@@ -1384,7 +1548,7 @@
       "it": "Disegna",
       "ja": "描画",
       "ko": "그리기",
-      "lt": "Piešti",
+      "lt": "Brėžti",
       "lv": "Zīmēt",
       "nb": "Tegn",
       "nl": "Tekenen",
@@ -1774,7 +1938,9 @@
       },
       "defaultSize": {
         "width": 262,
-        "height": 44
+        "height": 44,
+        "autoWidth": true,
+        "autoHeight": true
       },
       "translatedLocales": [
         "en",
@@ -2066,7 +2232,7 @@
       "type": "widget",
       "dependency": [
         "jimu-arcgis",
-        "https://oi1.img.arcgis.com/api/v2.13/main.js"
+        "https://oi1.img.arcgis.com/api/v2.14/main.js"
       ],
       "version": "1.12.0",
       "exbVersion": "1.12.0",
@@ -2839,6 +3005,61 @@
     "group": 1
   },
   {
+    "name": "near-me",
+    "manifest": {
+      "name": "near-me",
+      "label": "Near Me (Beta)",
+      "type": "widget",
+      "version": "1.12.0",
+      "exbVersion": "1.12.0",
+      "author": "Esri R&D Center Beijing",
+      "description": "This is the widget used in developer guide",
+      "copyright": "",
+      "license": "http://www.apache.org/licenses/LICENSE-2.0",
+      "dependency": "jimu-arcgis",
+      "properties": {
+        "canConsumeDataAction": true
+      },
+      "excludeDataActions": [
+        "table.*",
+        "setFilter",
+        "arcgis-map.*"
+      ],
+      "messageActions": [
+        {
+          "name": "locate",
+          "label": "Set location",
+          "uri": "message-actions/set-location-message-action"
+        }
+      ],
+      "dataActions": [
+        {
+          "name": "locate",
+          "label": "Set location",
+          "uri": "data-actions/set-location-data-action",
+          "icon": "runtime/assets/icons/nearme-icon.svg"
+        }
+      ],
+      "translatedLocales": [
+        "en"
+      ],
+      "defaultSize": {
+        "width": 350,
+        "height": 400
+      }
+    },
+    "i18nLabel": {
+      "en": "Near Me (Beta)"
+    },
+    "i18nDescription": {
+      "en": null
+    },
+    "uri": "widgets/arcgis/near-me/",
+    "icon": "widgets/arcgis/near-me/icon.svg",
+    "order": 20,
+    "group": 1
+  },
+  {
     "name": "list",
     "manifest": {
       "name": "list",
@@ -3203,7 +3424,8 @@
       "properties": {},
       "defaultSize": {
         "width": 350,
-        "height": 400
+        "height": 54,
+        "autoHeight": true
       },
       "translatedLocales": [
         "en",
@@ -3864,7 +4086,8 @@
       "license": "http://www.apache.org/licenses/LICENSE-2.0",
       "defaultSize": {
         "width": 400,
-        "height": 34
+        "height": 34,
+        "autoHeight": true
       },
       "properties": {
         "hasSettingPage": true
@@ -5293,6 +5516,7 @@
         "flipIcon": false,
         "coverLayoutBackground": true,
         "supportAutoSize": false,
+        "useDragHandler": true,
         "hasBuilderSupportModule": true
       },
       "layouts": [
@@ -5926,6 +6150,7 @@
         "hasEmbeddedLayout": true,
         "isWidgetController": true,
         "supportAutoSize": true,
+        "useDragHandler": true,
         "hasBuilderSupportModule": true
       },
       "layouts": [
@@ -6109,7 +6334,9 @@
       },
       "defaultSize": {
         "width": 24,
-        "height": 24
+        "height": 24,
+        "autoWidth": true,
+        "autoHeight": true
       },
       "translatedLocales": [
         "en",
@@ -7380,41 +7607,6 @@
     "group": 7
   },
   {
-    "name": "d3-import-data",
-    "manifest": {
-      "name": "d3-import-data",
-      "label": "d3-import-data",
-      "type": "widget",
-      "version": "1.12.0",
-      "exbVersion": "1.12.0",
-      "author": "Esri R&D Center Beijing",
-      "description": "This widget demonstrates how to use D3.js.",
-      "copyright": "",
-      "license": "http://www.apache.org/licenses/LICENSE-2.0",
-      "properties": {
-        "hasSettingPage": false,
-        "hasConfig": false
-      },
-      "translatedLocales": [
-        "en"
-      ],
-      "defaultSize": {
-        "width": 800,
-        "height": 500
-      }
-    },
-    "i18nLabel": {
-      "en": "d3-import-data"
-    },
-    "i18nDescription": {
-      "en": null
-    },
-    "uri": "widgets/d3-import-data/",
-    "icon": "widgets/d3-import-data/icon.svg",
-    "order": 700,
-    "group": 7
-  },
-  {
     "name": "demo",
     "manifest": {
       "name": "demo",
@@ -7958,7 +8150,7 @@
       "version": "1.12.0",
       "exbVersion": "1.12.0",
       "author": "Esri R&D Center Beijing",
-      "description": "This widget demonstrates how to use D3.js.",
+      "description": "show json info.",
       "copyright": "",
       "license": "http://www.apache.org/licenses/LICENSE-2.0",
       "properties": {
