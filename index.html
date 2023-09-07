@@ -19,13 +19,21 @@
     }
 
     /* 媒体查询 */
-    @media (max-width: 917px) {
+    @media (min-width: 300px) and (max-width: 917px) {
       h1 {
         color: red;
       }
+    }
 
-      #content {
-        width: 80%;
+    @media (min-width: 917px) {
+      h1 {
+        color: blue;
+      }
+    }
+
+    @media (max-width: 300px) {
+      h1 {
+        color: black;
       }
     }
   </style>
@@ -40,9 +48,9 @@
 
   <script>
     // 检测窗口宽度并应用不同样式
-    function checkWindowSize() {
+    function checkWindowSize(mode) {
       var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      document.getElementById('windowWidth').innerText = windowWidth + 'px'
+      document.getElementById('windowWidth').innerText = mode + ' '+ windowWidth + 'px'
       if (Number(windowWidth) > 917) {
         // 窗口宽度小于917px时的样式
         document.getElementById('content').style.backgroundColor = 'lightgray';
@@ -54,14 +62,12 @@
 
     // 监听窗口大小变化事件
     window.addEventListener('resize', function() {
-      console.log('resize')
-      checkWindowSize();
+      checkWindowSize('resize');
     });
 
     // 页面加载完成后立即检测窗口大小
     window.addEventListener('load', function() {
-      console.log('load')
-      checkWindowSize();
+      checkWindowSize('load');
     });
   </script>
 </body>
