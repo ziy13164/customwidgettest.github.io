@@ -43,7 +43,7 @@
     function checkWindowSize() {
       var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
       document.getElementById('windowWidth').innerText = windowWidth + 'px'
-      if (Number(windowWidth) < 917) {
+      if (Number(windowWidth) > 917) {
         // 窗口宽度小于917px时的样式
         document.getElementById('content').style.backgroundColor = 'lightgray';
       } else {
