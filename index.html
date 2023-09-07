@@ -37,7 +37,7 @@
     // 检测窗口宽度并应用不同样式
     function checkWindowSize() {
       var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
+      console.log('width', windowWidth)
       if (windowWidth < 917) {
         // 窗口宽度小于917px时的样式
         document.getElementById('content').style.backgroundColor = 'lightgray';
@@ -49,11 +49,13 @@
 
     // 监听窗口大小变化事件
     window.addEventListener('resize', function() {
+      console.log('resize')
       checkWindowSize();
     });
 
     // 页面加载完成后立即检测窗口大小
     window.addEventListener('load', function() {
+      console.log('load')
       checkWindowSize();
     });
   </script>
