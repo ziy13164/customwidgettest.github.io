@@ -30,6 +30,7 @@
   <h1>响应式网页示例</h1>
 
   <div id="content">
+    <p id="windowWidth"></p>
     <p>This is the content of the webpage.</p>
   </div>
 
@@ -37,7 +38,7 @@
     // 检测窗口宽度并应用不同样式
     function checkWindowSize() {
       var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      console.log('width', windowWidth)
+      document.getElementById(windowWidth).innerText = windowWidth
       if (windowWidth < 917) {
         // 窗口宽度小于917px时的样式
         document.getElementById('content').style.backgroundColor = 'lightgray';
