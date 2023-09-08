@@ -63,26 +63,25 @@
       }
     }
 
-    // 监听窗口大小变化事件
-    window.addEventListener('resize', function() {
-      checkWindowSize('resize');
-    });
-
-    // 页面加载完成后立即检测窗口大小
-    window.addEventListener('load', function() {
-      checkWindowSize('load');
-    });
-
-    // var parentElement = document.getElementById('parent');
-    // var observer = new ResizeObserver(function(entries) {
-    //   for (var entry of entries) {
-    //     var parentWidth = entry.contentRect.width;
-    //     console.log("父元素宽度变化：" + parentWidth + "px");
-    //     checkWindowSize('resize');
-    //   }
+    // // 监听窗口大小变化事件
+    // window.addEventListener('resize', function() {
+    //   checkWindowSize('resize');
     // });
 
-    // observer.observe(window);
+    // // 页面加载完成后立即检测窗口大小
+    // window.addEventListener('load', function() {
+    //   checkWindowSize('load');
+    // });
+
+    var observer = new ResizeObserver(function(entries) {
+      for (var entry of entries) {
+        var parentWidth = entry.contentRect.width;
+        console.log("父元素宽度变化：" + parentWidth + "px");
+        checkWindowSize('resize');
+      }
+    });
+
+    observer.observe(document);
   </script>
 </body>
 </html>
