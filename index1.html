@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>测试嵌入响应式网页</title>
+  <style>
+    /* 一般样式 */
+    h1 {
+      text-align: center;
+    }
+
+    #content {
+      width: 50%;
+      margin: 0 auto;
+    }
+    .large h1{
+      color: blue;
+    }
+    .mobile h1{
+      color: red;
+    }
+    #windowWidth{
+      background-color: green;
+    }
+
+    /* 媒体查询 */
+    /* @media (min-width: 300px) and (max-width: 917px) {
+      h1 {
+        color: red;
+      }
+    }
+
+    @media (min-width: 917px) {
+      h1 {
+        color: blue;
+      }
+    }
+
+    @media (max-width: 300px) {
+      h1 {
+        color: black;
+      }
+    } */
+  </style>
+</head>
+<body>
+  <div id="app" className="large">
+    <h1>测试嵌入响应式网页</h1>
+
+    <div id="content">
+      <p id="windowWidth"></p>
+      <p>This is the content of the webpage.</p>
+    </div>
+  </div>
+
+
+  <script>
+    function modifyClassName (){
+      var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var appDiv = document.getElementById('app')
+      if(windowWidth<917){
+        appDiv.className = 'mobile'
+      }else{
+        appDiv.className = 'large'
+      }
+
+    }
+
+        // 监听窗口大小变化事件
+    window.addEventListener('resize', function() {
+      modifyClassName('resize');
+    });
+
+    // 页面加载完成后立即检测窗口大小
+    window.addEventListener('load', function() {
+      modifyClassName('load');
+    });
+  </script>
+</body>
+</html>
