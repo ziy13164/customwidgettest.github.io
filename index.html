@@ -50,7 +50,10 @@
     // 检测窗口宽度并应用不同样式
     function checkWindowSize(mode) {
       var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      document.getElementById('windowWidth').innerText = mode + ' '+ +'window width: ' + windowWidth + 'px'
+      window.postMessage({
+        windowWidth: windowWidth,
+        })
+      document.getElementById('windowWidth').innerText = mode + ' ' +'window width: ' + windowWidth + 'px'
       if (Number(windowWidth) > 917) {
         // 窗口宽度小于917px时的样式
         document.getElementById('content').style.backgroundColor = 'lightgray';
