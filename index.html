@@ -5,6 +5,12 @@
   <title>测试嵌入响应式网页</title>
   <style>
     /* 一般样式 */
+    #pageContent{
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
     h1 {
       text-align: center;
     }
@@ -39,12 +45,15 @@
   </style>
 </head>
 <body>
-  <h1>测试嵌入响应式网页</h1>
+  <div id="pageContent">
+    <h1>测试嵌入响应式网页</h1>
 
-  <div id="content">
-    <p id="windowWidth"></p>
-    <p>This is the content of the webpage.</p>
+    <div id="content">
+      <p id="windowWidth"></p>
+      <p>This is the content of the webpage.</p>
+    </div>
   </div>
+
 
   <script>
     // 检测窗口宽度并应用不同样式
