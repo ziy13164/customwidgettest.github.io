@@ -84,7 +84,7 @@
 
     var observer = new ResizeObserver(function(entries) {
       for (var entry of entries) {
-        var parentWidth = entry.contentRect.width;
+        var parentWidth = entry.clientWidth;
         console.log("父元素宽度变化：" + parentWidth + "px");
         checkWindowSize('resize');
       }
